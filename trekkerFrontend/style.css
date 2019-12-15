@@ -1,0 +1,186 @@
+body {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
+      sans-serif;
+    font-weight: 300;
+  }
+  
+  h3 {
+    line-height: 0px;
+  }
+  
+  h4 {
+    text-align: center;
+    padding-top: 7px;
+    line-height: 15px;
+  }
+  
+  h5 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+  
+  .center-text {
+    text-align: center;
+    margin: 4px;
+  }
+  
+  .small-text {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0px;
+  }
+  
+  #container {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    bottom: 85px;
+  }
+  
+  #user-login {
+    padding-bottom: 10px;
+  }
+  
+  #login-form {
+    visibility: visible;
+  }
+  
+  .welcome {
+    position: relative;
+    bottom: 100px;
+  }
+
+  #logo {
+    position: relative;
+    left: 396px;
+    top: 65px;
+  }
+  
+  /*#search-form {
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  #search-input {
+    font-size: 3rem;
+    border: 3px solid #2E8B57;
+    color: #000000;
+  }
+  
+  input:focus {
+    outline: none;
+  }*/
+  
+  .park-card {
+    float: left;
+    width: 240px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 8px;
+    position: relative;
+    top: 50px;
+    background: #fcf4e8;
+    color: #000000;
+  }
+  
+  .park-pic {
+    visibility: visible;
+    margin: auto;
+    padding-top: 5px;
+    padding-left: 20px;
+  }
+  
+  .park-summary {
+    visibility: hidden; 
+    float: left;
+    font-size: 0.7rem;
+    width: 210px;
+    height: 190px;
+    padding-left: 17px;
+    position: absolute;
+    top: 40px;
+    background: #fcf4e8;
+    color: #000000;
+  }
+  
+  .visit-counter {
+    font-size: 0.9rem;
+    font-weight: bold;
+    position: absolute;
+    right: 35px;
+    bottom: 0px;
+  }
+  
+  .visit-icon {
+    background-image: url('images/grey-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    margin: 4px;
+    border: 3px solid #fcf4e8;
+    background-color: #fcf4e8;
+  }
+  
+  .visited-card {
+    float: left;
+    width: 240px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 8px;
+    position: relative;
+    top: 50px;
+    background: #d9f2d9;
+    color: #000000;
+  }
+  
+  .visited-icon {
+    background-image: url('images/green-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    margin: 4px;
+    border: 3px solid #d9f2d9;
+    background-color: #d9f2d9;
+  }
+  
+  .visited-summary {
+    visibility: hidden; 
+    float: left;
+    font-size: 0.7rem;
+    width: 210px;
+    height: 190px;
+    padding-left: 17px;
+    position: absolute;
+    top: 40px;
+    background: #d9f2d9;
+    color: #000000;
+  }
+  
+  .remove-btn {
+    visibility: hidden;
+    background-image: url('images/x-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+    margin: 4px;
+    border: 3px solid #d9f2d9;
+    background-color: #d9f2d9;
+  }
+  
+  button:focus {
+    outline: none;
+  }
