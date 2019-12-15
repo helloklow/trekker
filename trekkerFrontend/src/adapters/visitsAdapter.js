@@ -4,7 +4,7 @@ class VisitsAdapter {
         this.url = 'http://localhost:3000/visits'
     }
 
-    fetchVisits() {
+    getVisits() {
         return fetch(this.url)
             .then(resp => resp.json())
     }

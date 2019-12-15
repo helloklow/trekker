@@ -4,7 +4,7 @@ class ParksAdapter {
         this.url = 'http://localhost:3000/parks'
     }
 
-    fetchParks() {
+    getParks() {
         return fetch(this.url)
             .then(resp => resp.json())
     }

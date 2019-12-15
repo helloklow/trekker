@@ -1,21 +1,18 @@
-// Parks constructor sets up creation of parks collection
-// Invokes collectParks, which uses Parksadapter to fetch parks JSON and push to array
 class Parks {
     constructor() {
-        this.memoizedParks = []
         this.adapter = new ParksAdapter()
-        this.initBindAndEvents()
+        this.memoizedParks = []
         this.collectParks()
+        this.initBindAndEvents()
     }
 
-    // Cache DOM elements
     initBindAndEvents() {
         this.container = document.querySelector('#parks-container')
         this.container.onmouseover = this.container.onmouseout = this.toggleSummary
     }
 
     collectParks() {
-        this.adapter.fetchParks()
+        this.adapter.getParks()
             .then(parks => parks.forEach(p => this.memoizedParks.push(new Park(p))))
             .then(() => this.renderParks())
     }
@@ -24,7 +21,7 @@ class Parks {
         this.container.innerHTML = this.memoizedParks.map(p => p.parkHTML()).join('')
     }
 
-    // Figure out how to move to park.js?
+    // Figure out how to move to park.js? Set up callback fn and pass in e.target?
     toggleSummary(e) {
         if (e.target.dataset.action === 'toggle-summary') {
             const img = e.target
