@@ -1,5 +1,5 @@
 // Communicates with API, fetches visits and parses to JSON
-class VisitsService {
+class VisitsAdapter {
     constructor() {
         this.url = 'http://localhost:3000/visits'
     }

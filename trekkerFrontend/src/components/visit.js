@@ -4,8 +4,6 @@ class Visit {
         this.action = visitJSON.action
         this.park = visitJSON.park.id
         this.parkName = visitJSON.park.name // for testing only -> just use park id (above)
-        this.userName = visitJSON.user.username // for testing only -> update to user id
-        // this.user = visitJSON.user.id
     }
 
 

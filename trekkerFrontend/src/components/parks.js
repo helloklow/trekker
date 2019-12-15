@@ -1,9 +1,9 @@
 // Parks constructor sets up creation of parks collection
-// Invokes collectParks, which uses ParksService to fetch parks JSON and push to array
+// Invokes collectParks, which uses Parksadapter to fetch parks JSON and push to array
 class Parks {
     constructor() {
         this.memoizedParks = []
-        this.service = new ParksService()
+        this.adapter = new ParksAdapter()
         this.initBindAndEvents()
         this.collectParks()
     }
@@ -15,7 +15,7 @@ class Parks {
     }
 
     collectParks() {
-        this.service.fetchParks()
+        this.adapter.fetchParks()
             .then(parks => parks.forEach(p => this.memoizedParks.push(new Park(p))))
             .then(() => this.renderParks())
     }

@@ -1,20 +1,20 @@
 # Trekker
 
-Trekker is a place for U.S. National Park enthusiasts to track which parks they have visited and find inspiration for their next park adventure. This application provides a comprehensive list of U.S. National Parks. Each park includes an enchanting photo alongside an informative summary. Create a Trekker account to track as you visit all 61 (and counting!) of America's richest landscapes. See which parks you have yet to visit and embark on your next epic trek!
+Trekker is a place for U.S. National Park enthusiasts to find inspiration for their next park adventure. This application provides a comprehensive list of U.S. National Parks. Each park provides an enchanting photo, an informative summary, and insightful visit notes from fellow Trekkers. Browse all 61 (and counting!) of America's richest landscapes and prepare to embark on your next epic trek!
 
 ## Setup
 
 • Clone this repo and run `bundle install` to install all application dependencies.
 
-• From the backend directory, run `rails db:seed` to seed all required data.
+• From the backend directory, run `rails db:migrate` and `rails db:seed` to create the database and seed all required data.
 
 ## Usage
 
-• Once the repo is cloned, dependencies installed, and data seeded, launch the server from the backend directory by running `rails s`.
+• Once the repo is cloned, dependencies installed, database created, and data seeded, launch the server from the backend directory by running `rails s`.
 
 • From the frontend directory, launch the application in your browser by running `open index.html`.
 
-• Create an account and begin trekking!
+• Begin trekking!
 
 ## Contributing
 

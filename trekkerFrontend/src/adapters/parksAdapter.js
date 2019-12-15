@@ -1,5 +1,5 @@
 // Communicates with API, fetches parks and parses to JSON
-class ParksService {
+class ParksAdapter {
     constructor() {
         this.url = 'http://localhost:3000/parks'
     }

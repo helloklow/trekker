@@ -1,7 +1,8 @@
 body {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
       sans-serif;
-    font-weight: 300;
+  font-weight: 300;
+  background: #fcf4e8;
   }
   
   h3 {
@@ -31,31 +32,67 @@ body {
     line-height: 0px;
   }
   
-  #container {
+  #app-container {
     width: 1000px;
     margin: auto;
-    position: relative;
     bottom: 85px;
   }
   
-  #user-login {
-    padding-bottom: 10px;
+  #page-container {
+    width: 1000px;
+    margin: auto;
   }
   
-  #login-form {
-    visibility: visible;
+  #alert-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    width: 425px;
+    line-height: 14px;
   }
   
-  .welcome {
+  #header-container {
     position: relative;
-    bottom: 100px;
+    bottom: 140px;
+    left: 290px;
+    text-align: center;
+    width: 420px;
+  }
+  
+  #visits-container {
+    visibility: hidden;
+    position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
+    right: 210px;
+    bottom: 40px;
+    width: 400px;
+    height: 330px;
+    padding: 15px;
+    margin: auto;
+    font-size: 1.3rem;
+    line-height: 14px;
+    border-radius: 8px;
+    border: 9px solid #bfddbf;
+    background: #bfddbf;
+    color: #636363;
   }
 
+  #parks-container {
+    position: relative;
+    bottom: 420px;
+    width: 1000px;
+    margin: auto;
+    }
+  
   #logo {
     position: relative;
-    left: 396px;
-    top: 65px;
-  }
+    height: 155px;
+    left: 425px;
+    top: 20px;
+    padding-bottom: 40px;
+    }
   
   /*#search-form {
     width: 500px;
@@ -72,7 +109,7 @@ body {
   input:focus {
     outline: none;
   }*/
-  
+
   .park-card {
     float: left;
     width: 240px;
@@ -80,9 +117,9 @@ body {
     margin: 5px;
     border-radius: 8px;
     position: relative;
-    top: 50px;
-    background: #fcf4e8;
-    color: #000000;
+    top: 420px;
+    background: #f9e9d2;
+    color: #636363;
   }
   
   .park-pic {
@@ -101,17 +138,17 @@ body {
     padding-left: 17px;
     position: absolute;
     top: 40px;
-    background: #fcf4e8;
+    background: #f9e9d2;
     color: #000000;
   }
   
-  .visit-counter {
+  /* .visit-counter {
     font-size: 0.9rem;
     font-weight: bold;
     position: absolute;
     right: 35px;
     bottom: 0px;
-  }
+  } */
   
   .visit-icon {
     background-image: url('images/grey-icon.png');
@@ -123,47 +160,8 @@ body {
     right: 3px;
     bottom: 3px;
     margin: 4px;
-    border: 3px solid #fcf4e8;
-    background-color: #fcf4e8;
-  }
-  
-  .visited-card {
-    float: left;
-    width: 240px;
-    height: 250px;
-    margin: 5px;
-    border-radius: 8px;
-    position: relative;
-    top: 50px;
-    background: #d9f2d9;
-    color: #000000;
-  }
-  
-  .visited-icon {
-    background-image: url('images/green-icon.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    right: 3px;
-    bottom: 3px;
-    margin: 4px;
-    border: 3px solid #d9f2d9;
-    background-color: #d9f2d9;
-  }
-  
-  .visited-summary {
-    visibility: hidden; 
-    float: left;
-    font-size: 0.7rem;
-    width: 210px;
-    height: 190px;
-    padding-left: 17px;
-    position: absolute;
-    top: 40px;
-    background: #d9f2d9;
-    color: #000000;
+    border: 3px solid #f9e9d2;
+    background-color: #f9e9d2;
   }
   
   .remove-btn {
