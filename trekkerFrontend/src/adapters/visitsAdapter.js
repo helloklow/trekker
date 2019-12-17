@@ -17,7 +17,7 @@ class VisitsAdapter {
                 'Accept': 'application/json'
             },
             body: JSON.stringify({
-                name: params[0],
+                date: params[0],
                 notes: params[1],
                 park_id: params[2]
             })

@@ -21,12 +21,11 @@ class Parks {
     renderParksAndOptions() {
         this.container.innerHTML = this.memoizedParks.map(p => p.parkHTML()).join('')
         const options = this.memoizedParks.map(p => p.name)
-        for (let i = 0; i < options.length; i++) {
+        for (let i=0; i < options.length; i++) {
             let opt = options[i]
             let el = document.createElement('option')
             el.innerText = opt
-            el.value = opt
-            el.dataset.id = i // Why won't this work???
+            el.value = i+1
             this.parkSelector.appendChild(el)
         }
     }
