@@ -1,26 +1,24 @@
 class VisitsController < ApplicationController
     def index
         visits = Visit.all 
-        render json: VisitSerializer.new(visits).to_serialized_json
+        render json: visits.to_json(include: [:park])
     end
 
     def show
         visit = Visit.find_by(id: params[:id])
-        render json: VisitSerializer.new(visit).to_serialized_json
+        render json: visit.to_json(include: [:park])
     end
 
     def create
         visit = Visit.new(visit_params)
         if visit.save
             render json: visit, except: [:created_at, :updated_at]
-        else 
-            flash.now[:error] = "Error: Visit could not be saved!"
         end
     end
 
     private
 
     def visit_params
-        params.require(:date, :notes)
+        params.require(:visit).permit(:date, :notes, :park_id)
     end
 end
