@@ -1,6 +1,7 @@
 // Establish individual instances of visit while iterating over memoizedVisits
-class Visit {
+class Visit { // extends Park -> secondary option if setting dataset won't work???
     constructor(visit) {
+        // super(name)
         this.date = visit.date
         this.notes = visit.notes
         this.park = visit.park_id
@@ -8,9 +9,7 @@ class Visit {
     }
 
     initBindingsAndEvents() {
-        // console.log(this.park)
         this.container = document.querySelector('#parks-container')
-
     }
 
 

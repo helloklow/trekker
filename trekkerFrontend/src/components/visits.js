@@ -28,7 +28,8 @@ class Visits {
         e.preventDefault()
         const date = this.visitDate.value
         const notes = this.visitNotes.value
-        const park = this.findPark(this.visitPark.value)
+        const park = this.visitPark.value
+        console.log(park)
         // const params = [date, notes, park]
         // this.adapter.postVisit(params).then(v => {
         //     this.memoizedVisits.push(new Visit(v))
@@ -37,13 +38,12 @@ class Visits {
         // })
         this.visitDate.value = '' 
         this.visitNotes.value = ''
-        this.visitPark.value = ''
+        // this.visitPark.value = ''
     }
 
-    findPark(parkName) {
-        
-        console.log(result)
-    }
+    // findPark(parkName) {
+    //     console.log(parkName.dataset.id)
+    // }
     
     
 }

@@ -18,20 +18,17 @@ class Parks {
             .then(() => this.renderParksAndOptions())
     }
 
-    getParks() {
-        console.log(this.memoizedParks)
-    }
-
     renderParksAndOptions() {
         this.container.innerHTML = this.memoizedParks.map(p => p.parkHTML()).join('')
         const options = this.memoizedParks.map(p => p.name)
         for (let i = 0; i < options.length; i++) {
             let opt = options[i]
             let el = document.createElement('option')
-            el.innerText = opt 
+            el.innerText = opt
             el.value = opt
+            el.dataset.id = i // Why won't this work???
             this.parkSelector.appendChild(el)
-        } 
+        }
     }
 
     // Figure out how to move to park.js? Set up callback fn and pass in e.target?
