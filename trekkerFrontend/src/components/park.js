@@ -16,18 +16,12 @@ class Park {
                 <div id='park-details'> 
                     <img class='park-pic' data-name='${this.name}' data-action='toggle-summary' src='${this.pic}'>
                     <p class='park-summary' data-name='${this.name}' data-action='toggle-summary'>${this.summary}</p>
-                    
-                    <form id='new-visit-form' style='visibility: hidden'>  
-                        <input type='date' class='visit-date' placeholder='Date of Visit'></input><br>  
-                        <textarea rows='5' cols='28' class='visit-notes' placeholder='Notes'></textarea><br>
-                        <input type='submit' data-id='${this.name}' id='submit'>
-                    </form>
-                    
-                    <button class='visit-btn' data-id='${this.id}' data-action='visit-btn' alt='Visit'></button>
+
                 </div>                  
             </div>
         `)
     }
 
+// <button class='visit-btn' data-id='${this.id}' data-action='visit-btn' alt='Visit'></button>
 
 }

@@ -9,4 +9,20 @@ class VisitsAdapter {
             .then(resp => resp.json())
     }
 
+    postVisit(params) {
+        return fetch(this.url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: params[0],
+                notes: params[1],
+                park_id: params[2]
+            })
+        })
+            .then(resp => resp.json())
+    }
+
 }

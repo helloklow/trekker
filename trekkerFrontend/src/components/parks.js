@@ -3,22 +3,35 @@ class Parks {
         this.adapter = new ParksAdapter()
         this.memoizedParks = []
         this.collectParks()
-        this.initBindAndEvents()
+        this.initBindingsAndEvents()
     }
 
-    initBindAndEvents() {
+    initBindingsAndEvents() {
         this.container = document.querySelector('#parks-container')
+        this.parkSelector = document.querySelector('#input-park')
         this.container.onmouseover = this.container.onmouseout = this.toggleSummary
     }
 
     collectParks() {
         this.adapter.getParks()
             .then(parks => parks.forEach(p => this.memoizedParks.push(new Park(p))))
-            .then(() => this.renderParks())
+            .then(() => this.renderParksAndOptions())
     }
 
-    renderParks() {
+    getParks() {
+        console.log(this.memoizedParks)
+    }
+
+    renderParksAndOptions() {
         this.container.innerHTML = this.memoizedParks.map(p => p.parkHTML()).join('')
+        const options = this.memoizedParks.map(p => p.name)
+        for (let i = 0; i < options.length; i++) {
+            let opt = options[i]
+            let el = document.createElement('option')
+            el.innerText = opt 
+            el.value = opt
+            this.parkSelector.appendChild(el)
+        } 
     }
 
     // Figure out how to move to park.js? Set up callback fn and pass in e.target?
