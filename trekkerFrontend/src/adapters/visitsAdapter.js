@@ -1,6 +1,6 @@
 class VisitsAdapter {
     constructor() {
-        this.url = 'http://localhost:3000/visits'
+        this.url = 'http://localhost:3000/api/v1/visits'
     }
 
     getVisits() {
