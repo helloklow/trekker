@@ -8,7 +8,7 @@ class Park {
         this.pic = park.pic
     }
 
-    parkHTML() { // remove data name
+    parkHTML() {
         return (`
             <div id='park-card' class='park-card' data-id='${this.id}'>
                 <h4 class='center-text'>${this.name}</h4>

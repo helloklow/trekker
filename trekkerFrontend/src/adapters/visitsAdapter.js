@@ -14,7 +14,7 @@ class VisitsAdapter {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                // 'Accept': 'application/json'
+                'Accept': 'application/json'
             },
             body: JSON.stringify({
                 date: params[0],
@@ -23,7 +23,6 @@ class VisitsAdapter {
             })
         })
             .then(resp => resp.json())
-            // .then(v => console.log(v)) // for testing only!
     }
 
 }

@@ -14,7 +14,6 @@ body {
   
   h3 {
     position: relative;
-    top: 50px;
   }
   
   h4 {
@@ -22,11 +21,6 @@ body {
     padding-top: 7px;
     line-height: 15px;
   }
-  
-  /* h5 {
-    margin-top: 50px;
-    margin-bottom: 5px;
-  } */
   
   .center-text {
     text-align: center;
@@ -58,14 +52,14 @@ body {
     padding-bottom: 40px;
     }
 
-  #visit-form {
+  #visit-header {
     position: relative;
-    top: 15px;
-    right: 3px;
-    width: 210px;
-    height: 386px;
+    bottom: 15px;
+    left: 240px;
+    width: 500px;
+    height: 320px;
     margin: 5px;
-    padding-top: 12px;
+    padding-top: 20px;
     border-radius: 8px;
     background: #f9e9d2;
     color: #636363;
@@ -73,20 +67,29 @@ body {
 
   #new-visit-form {
     text-align: center;
-    position: absolute;
-    top: 100px;
-    left: 15px;
+    position: relative;
+    bottom: 10px;
+    left: 95px;
+    width: 280px;
+    padding: 15px;
+    padding-top: 10px;
+    border-radius: 8px;
+    background: #fcf4e8;
+  }
+
+  #input-notes {
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
   
   #visit-container {
-    float: right;
+    float: left;
     position: relative;
     overflow: scroll;
     overflow-x: hidden;
-    bottom: 388px;
-    right: 2px;
-    width: 750px;
-    height: 350px;
+    left: 5px;
+    width: 942px;
+    height: 250px;
     padding: 15px;
     margin: auto;
     line-height: 14px;
@@ -97,22 +100,22 @@ body {
   }
 
   .visit-card {
-    float: right;
+    float: left;
     position: relative;
-    width: 220px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
     margin: 5px;
-    padding: 5px;
+    padding: 5px 5px 0px 10px;
     border-radius: 8px;
     font-size: 0.8rem;
     line-height: 16px;
-    background: #c5ebd5;
+    background: #c5e4ca;
     color: #636363;
   }
 
   #parks-container {
     position: relative;
-    bottom: 785px;
+    bottom: 405px;
     width: 1000px;
     margin: auto;
     }
