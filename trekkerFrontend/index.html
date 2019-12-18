@@ -15,22 +15,29 @@
   </head>
   <body>
     <div id='app-container'>
+
       <img id='logo' src="images/trekker-logo.png" alt='Trekker App'>
-      <div id='visit-container'>
-        <h2 class='center-text'>Welcome, Trekker</h2><br>
-        <div id='visit-form'>
-          <h4 class='center-text'>New Visit</h4><br><br>
-          <form id='new-visit-form'>  
-              <select id='input-park' class='park-options'></select><br><br>
-              <textarea id='input-notes' rows='5' cols='28' placeholder='Notes'></textarea><br><br>
-              <input type='date' id='input-date' placeholder='Date of Visit'></input><br><br>
-              <input type='submit' id='submit' value='Add Visit'>
-          </form>
-        </div>
+      <h2 class='center-text'>Welcome, Trekker</h2><br>
+      
+      <div id='visit-form'>
+        <h3 class='center-text'>New Visit</h3>
+        <form id='new-visit-form'>  
+            <select id='input-park' class='park-options'></select><br><br>
+            <textarea id='input-notes' rows='5' cols='28' placeholder='Notes'></textarea><br><br>
+            <input type='date' id='input-date' placeholder='Date of Visit'></input><br><br>
+            <input type='submit' id='submit' value='Add Visit'>
+        </form>
       </div>
+      
+      <div id='visit-container'>
+        
+        
+      </div>
+      
       <div id='parks-container'>
         
       </div>
+
     </div>
   </body>
 </html>

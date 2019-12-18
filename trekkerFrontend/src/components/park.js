@@ -10,18 +10,17 @@ class Park {
 
     parkHTML() { // remove data name
         return (`
-            <div id='park-card' class='park-card'>
+            <div id='park-card' class='park-card' data-id='${this.id}'>
                 <h4 class='center-text'>${this.name}</h4>
                 <p class='small-text'>${this.location}, est. ${this.est}</p>
-                <div id='park-details'> 
+                <div id='park-details' data-id='${this.id}'>
                     <img class='park-pic' data-name='${this.name}' data-action='toggle-summary' src='${this.pic}'>
                     <p class='park-summary' data-name='${this.name}' data-action='toggle-summary'>${this.summary}</p>
-
                 </div>                  
             </div>
         `)
     }
 
-// <button class='visit-btn' data-id='${this.id}' data-action='visit-btn' alt='Visit'></button>
+
 
 }

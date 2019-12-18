@@ -90,3 +90,4 @@ visit_p = Visit.create(date: "2019-05-21", notes: "One of my favorite parks. I v
 visit_q = Visit.create(date: "2019-10-31", notes: "What an insane landscape! I'd love to do so much more exploring!", park_id: 7)
 visit_r = Visit.create(date: "2019-11-04", notes: "Honestly, just another desert park in my opinion. All of Utah's parks kind of blend together for me.", park_id: 8)
 visit_s = Visit.create(date: "2019-12-01", notes: "One of my favorites for hiking. I find it very serene and secluded for the most part.", park_id: 9)
+visit_t = Visit.create(date: "2019-12-12", notes: "It's so empty come winter - Best time to get arch photos without straggling tourists. Not too cold at all, beautiful clear skies.", park_id: 2)

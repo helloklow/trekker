@@ -2,11 +2,19 @@ body {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
       sans-serif;
   font-weight: 300;
+  color: #636363;
   background: #fcf4e8;
+  }
+
+  h2 {
+    position: relative;
+    bottom: 10px;
+    font-size: 1.8rem;
   }
   
   h3 {
-    line-height: 0px;
+    position: relative;
+    top: 50px;
   }
   
   h4 {
@@ -15,10 +23,10 @@ body {
     line-height: 15px;
   }
   
-  h5 {
+  /* h5 {
     margin-top: 50px;
     margin-bottom: 5px;
-  }
+  } */
   
   .center-text {
     text-align: center;
@@ -49,17 +57,38 @@ body {
     top: 20px;
     padding-bottom: 40px;
     }
+
+  #visit-form {
+    position: relative;
+    top: 15px;
+    right: 3px;
+    width: 210px;
+    height: 386px;
+    margin: 5px;
+    padding-top: 12px;
+    border-radius: 8px;
+    background: #f9e9d2;
+    color: #636363;
+  }
+
+  #new-visit-form {
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 15px;
+  }
   
   #visit-container {
+    float: right;
     position: relative;
-    /* overflow: scroll;
-    overflow-x: hidden; */
-    bottom: 15px;
-    width: 400px;
-    height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+    bottom: 388px;
+    right: 2px;
+    width: 750px;
+    height: 350px;
     padding: 15px;
     margin: auto;
-    font-size: 1.3rem;
     line-height: 14px;
     border-radius: 8px;
     border: 9px solid #f9e9d2;
@@ -67,30 +96,23 @@ body {
     color: #636363;
   }
 
-  #visit-form {
+  .visit-card {
+    float: right;
     position: relative;
-    top: 5px;
-    left: 75px;
-    width: 240px;
-    height: 250px;
+    width: 220px;
+    height: 170px;
     margin: 5px;
-    padding-top: 10px;
+    padding: 5px;
     border-radius: 8px;
-    background: #fcf4e8;
+    font-size: 0.8rem;
+    line-height: 16px;
+    background: #c5ebd5;
     color: #636363;
-  }
-
-  #new-visit-form {
-    text-align: center;
-    position: absolute;
-    top: 50px;
-    right: 15px;
-    left: 15px;
   }
 
   #parks-container {
     position: relative;
-    bottom: 420px;
+    bottom: 785px;
     width: 1000px;
     margin: auto;
     }
@@ -140,7 +162,7 @@ body {
     color: #636363;
   } */
   
-  /* .visit-btn {
+  .visit-btn {
     background-image: url('images/grey-icon.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -154,7 +176,7 @@ body {
     background-color: #f9e9d2;
   }
   
-  .remove-btn {
+  /* .remove-btn {
     visibility: hidden;
     background-image: url('images/x-icon.png');
     background-repeat: no-repeat;
