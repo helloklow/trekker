@@ -8,31 +8,16 @@ class Visits {
     
     initBindingsAndEvents() {
         this.container = document.querySelector('#visit-container')
-        this.form = document.querySelector('form')
+
+        this.form = document.querySelector('#new-visit-form')
         this.visitPark = this.form.querySelector('#input-park')
         this.visitDate = this.form.querySelector('#input-date')
         this.visitNotes = this.form.querySelector('#input-notes')
         this.form.addEventListener('submit', this.postVisitForm.bind(this))
 
-        this.visitHeader = document.querySelector('#visit-header')
-        // this.visitDetails = document.querySelector('#visit-details')
+        this.search = document.querySelector('#search-visit-form')
+        this.search.addEventListener('input', this.searchResults.bind(this))
     }
-
-    // visitClick(e) {
-    //     e.preventDefault()
-    //     this.visitHeader.style.visibility = 'hidden'
-    //     this.viewVisitsBtn.style.visibility = 'hidden'
-    //     this.container.style.visibility = 'visible'
-    //     this.addVisitBtn.style.visibility = 'visible'
-    // }
-
-    // formClick(e) {
-    //     e.preventDefault()
-    //     this.visitHeader.style.visibility = 'visible'
-    //     this.viewVisitsBtn.style.visibility = 'visible'
-    //     this.container.style.visibility = 'hidden'
-    //     this.addVisitBtn.style.visibility = 'hidden'
-    // }
 
     collectVisits() {
         this.adapter.getVisits()
@@ -58,6 +43,14 @@ class Visits {
         this.visitDate.value = '' 
         this.visitNotes.value = ''
         this.visitPark.selectedIndex = 0
+    }
+
+    searchResults(e) {
+        e.preventDefault()
+        const query = e.target.value.toLowerCase()
+        const resultsArr = this.memoizedVisits.filter(v => v.parkName.toLowerCase().includes(query))
+        const results = resultsArr.map(v => v.visitHTML()).join('')
+        this.container.innerHTML = results
     }
     
 }
