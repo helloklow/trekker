@@ -6,12 +6,13 @@ class Visit {
         this.date = visit.date
         this.notes = visit.notes
         this.park = visit.park_id
+        this.visitHTML(this)
     }
 
     visitHTML() { 
         return (`
             <div id='visit-details' class='visit-card'>
-                <h4 class='visit-park center-text'>${this.parkName}</h4>
+                <h5 class='visit-park center-text'>${this.parkName}</h5>
                 <p class='visit-date center-text'>${this.formatDate(this.date)}</p>
                 <p class='visit-notes'>${this.notes}</p>
             </div>             

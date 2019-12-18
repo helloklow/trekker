@@ -13,7 +13,26 @@ class Visits {
         this.visitDate = this.form.querySelector('#input-date')
         this.visitNotes = this.form.querySelector('#input-notes')
         this.form.addEventListener('submit', this.postVisitForm.bind(this))
+
+        this.visitHeader = document.querySelector('#visit-header')
+        // this.visitDetails = document.querySelector('#visit-details')
     }
+
+    // visitClick(e) {
+    //     e.preventDefault()
+    //     this.visitHeader.style.visibility = 'hidden'
+    //     this.viewVisitsBtn.style.visibility = 'hidden'
+    //     this.container.style.visibility = 'visible'
+    //     this.addVisitBtn.style.visibility = 'visible'
+    // }
+
+    // formClick(e) {
+    //     e.preventDefault()
+    //     this.visitHeader.style.visibility = 'visible'
+    //     this.viewVisitsBtn.style.visibility = 'visible'
+    //     this.container.style.visibility = 'hidden'
+    //     this.addVisitBtn.style.visibility = 'hidden'
+    // }
 
     collectVisits() {
         this.adapter.getVisits()
@@ -34,15 +53,11 @@ class Visits {
         this.adapter.postVisit(params)
             .then(v => {
                 this.memoizedVisits.push(new Visit(v))
-                this.renderNewVisit(v)
+                this.renderVisits()
             })
         this.visitDate.value = '' 
         this.visitNotes.value = ''
-        this.visitPark.value = ''
-    }
-
-    renderNewVisit(v) {
-        console.log(v, this.container)
+        this.visitPark.selectedIndex = 0
     }
     
 }

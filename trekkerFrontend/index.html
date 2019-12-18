@@ -3,6 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <title>Trekker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' href='style.css'>
     <script src='src/components/parks.js'></script>
     <script src='src/components/park.js'></script>
@@ -17,15 +18,15 @@
     <div id='app-container'>
 
       <img id='logo' src="images/trekker-logo.png" alt='Trekker App'>
+      <h2 class='center-text'>Welcome, Trekker</h2><br>
       
       <div id='visit-header'>
-        <h2 class='center-text'>Welcome, Trekker</h2><br>
-        <form id='new-visit-form'>  
-            <h3 class='center-text'>New Visit</h3>
-            <select id='input-park' class='park-options'></select><br>
-            <textarea id='input-notes' rows='6' cols='32' placeholder='Notes'></textarea><br>
-            <input type='date' id='input-date' placeholder='Date of Visit'></input><br><br>
-            <input type='submit' id='submit' value='Add Visit'>
+        <form id='new-visit-form'>
+          <h4 class='center-text'>New Visit</h4><br>
+            <select id='input-park' class='form-control park-options' placeholder='Park' required></select><br>
+            <textarea id='input-notes' class='form-control' rows='6' placeholder='Notes' required></textarea><br>
+            <input type='date' id='input-date' class='form-control' placeholder='Date of Visit' required></input><br>
+            <button type='submit' class='btn btn-primary'>Add Visit</button>
         </form>
       </div>
       
