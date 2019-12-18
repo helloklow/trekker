@@ -1,6 +1,6 @@
 # Trekker
 
-Trekker is a place for U.S. National Park enthusiasts to find inspiration for their next park adventure. This application provides a comprehensive list of U.S. National Parks. Each park provides an enchanting photo, an informative summary, and insightful visit notes from fellow Trekkers. Browse all 61 (and counting!) of America's richest landscapes and prepare to embark on your next epic trek!
+Trekker is a place for U.S. National Park enthusiasts to share their experiences and find inspiration for their next park adventure. This application provides a comprehensive list of U.S. National Parks. Each park provides an enchanting photo, an informative summary, and insightful visit notes from fellow Trekkers. Browse all 61 (and counting!) of America's richest landscapes and prepare to embark on your next epic trek!
 
 ## Setup
 
