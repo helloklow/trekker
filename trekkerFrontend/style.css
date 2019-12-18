@@ -8,15 +8,15 @@ body {
 
   #logo {
     position: relative;
-    height: 155px;
-    left: 445px;
+    height: 175px;
+    left: 435px;
     top: 20px;
     padding-bottom: 40px;
   }
 
   h2 {
     position: relative;
-    bottom: 10px;
+    bottom: 5px;
   }
   
   h4 {
