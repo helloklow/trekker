@@ -30,7 +30,6 @@ class Parks {
         }
     }
 
-    // Figure out how to move to park.js? Set up callback fn and pass in e.target?
     toggleSummary(e) {
         if (e.target.dataset.action === 'toggle-summary') {
             const img = e.target
