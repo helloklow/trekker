@@ -1,4 +1,3 @@
-// Establish individual instances of visit while iterating over memoizedVisits
 class Visit {
     constructor(visit) {
         this.visit = visit
@@ -6,7 +5,6 @@ class Visit {
         this.date = visit.date
         this.notes = visit.notes
         this.park = visit.park_id
-        this.visitHTML(this)
     }
 
     visitHTML() { 
