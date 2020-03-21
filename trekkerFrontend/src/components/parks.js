@@ -12,10 +12,27 @@ class Parks {
         this.container.onmouseover = this.container.onmouseout = this.toggleSummary
     }
 
+    visitBindingsAndEvents() {
+        this.visitBtn = document.querySelector('#show-visits-btn')
+        // this.visitBtn.addEventListener('click', function(e) {
+        //    debugger
+        //    alert('Element clicked through function!')
+        //    this.visitBtnClick(e).bind(this) 
+        //})
+    }
+
+    visitBtnClick(e) {
+        e.preventDefault(e)
+        console.log('hello')
+    }
+
     collectParks() {
         this.adapter.getParks()
             .then(parks => parks.forEach(p => this.memoizedParks.push(new Park(p))))
-            .then(() => this.renderParksAndOptions())
+            .then(() => {
+                this.renderParksAndOptions()
+                this.visitBindingsAndEvents()
+            })  
     }
 
     renderParksAndOptions() {
